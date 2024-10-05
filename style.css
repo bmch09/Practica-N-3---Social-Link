@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 30%);
+    --Grey-800: hsl(0, 0%, 17%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.attribution a {
+    color: var(--Green);
+    padding: 0.5rem;
+}
+
+
+body,main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Grey-900);
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Grey-800);
+    max-width: 370px;
+    width: 90%;
+    height: auto;
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+img{
+    border-radius: 50%;
+    max-height: 130px;
+    width: auto;
+}
+
+h1{
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+h5{
+    color: var(--Green);
+    margin-bottom: 2rem;
+}
+
+p{
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+}
+
+a{
+    background-color: var(--Grey-700);
+    text-decoration: none;
+    color: var(--White);
+    width: 100%;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+}
+
+a:hover{
+    transition: 0.5s;
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
+
+@media screen and (max-width:480px) {
+
+    .container{
+        max-width: 350px;
+        width: 90%;
+        padding: 1rem;
+    }
+
+    img{
+        max-height: 100px;
+        width: auto;
+    }
+
+    a{
+        font-size: 0.9rem;
+        margin: 0.5rem;
+    }
+    
+}
